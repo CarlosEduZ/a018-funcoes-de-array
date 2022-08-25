@@ -11,3 +11,7 @@ const produtos = [
     { nome: "Sabão em Pó", categoria: "Limpeza", preco: 10.80 }
  ]
  
+ const arrumado = produtos.filter((tipo) => {
+    return tipo.categoria === "Limpeza"
+ })
+ console.log(arrumado)
