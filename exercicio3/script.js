@@ -11,3 +11,18 @@ const produtos = [
     { nome: "Sabão em Pó", categoria: "Limpeza", preco: 10.80 }
  ]
  
+ const arrumado = produtos.filter((tipo) => {
+    return tipo.categoria === "Limpeza"
+ })
+//  console.log(arrumado)
+
+//  for(let i in arrumado){
+//    let nomesLimpeza = []
+//    nomesLimpeza.push(arrumado[i].nome)
+//    console.log(nomesLimpeza)
+//  }
+
+const nomesLimp = arrumado.map((nomes) => {
+   return nomes.nome
+})
+console.log(nomesLimp)
