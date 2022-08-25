@@ -15,5 +15,16 @@ const caixaAlta = (maiusculo) => {
 }
 console.log(caixaAlta(objeto))
 
+const texto = (objeto) => {
+    return `Texto corrido: ${objeto.nome}, ${objeto.profissao}, ${objeto.username}, ${objeto.senha}`
+}
+console.log(texto(objeto))
 
+const funcaoBala = (objetoA, callback) => {
+    const response = callback(objetoA)
 
+    console.log(response)
+}
+
+funcaoBala(objeto, caixaAlta)
+funcaoBala(objeto, texto)

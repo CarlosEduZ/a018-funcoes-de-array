@@ -6,7 +6,7 @@ const triplos = arrayNum.map((numero) => {
 console.log(triplos)
 
 
-const metades = arrayNum.map((numero => {
+const metades = arrayNum.map((numero) => {
     return numero / 2
-}))
+})
 console.log(metades)
